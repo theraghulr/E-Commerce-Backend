@@ -1,8 +1,8 @@
 package com.example.Ecommerce;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 
 import java.util.Scanner;
 
@@ -13,13 +13,12 @@ public class EcommerceApplication {
 		SpringApplication.run(EcommerceApplication.class, args);
 
 		ApplicationContext ctx = SpringApplication.run(EcommerceApplication.class, args);
+
 		Scanner sc = new Scanner(System.in);
 
-		EcommerceApplication ref = ctx.getBean(EcommerceApplication.class);
+		EcommerceApplication app = ctx.getBean(EcommerceApplication.class);
 
-		System.out.println("Hello, there");
+		System.out.println("Application started");
 	}
-
-
 
 }
